@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 using UnityEngine;
 
-public class TeleportEffect : Effect
+public class PositionChangeEffect : Effect
 {
     public Vector3Int from, to;
 
-    public TeleportEffect(Entity victim, Vector3Int from, Vector3Int to, int probability = MaxProbability)
+    public PositionChangeEffect(Entity victim, Vector3Int from, Vector3Int to, int probability = MaxProbability)
         : base(victim, probability)
     {
         this.from = from;

@@ -1,9 +1,8 @@
 ﻿using EditorExtend;
 using UnityEditor;
-using UnityEngine;
 
 [CustomEditor(typeof(Player))]
-public class PlayerEditor : AutoEditor
+public class PlayerEditor : PawnEditor
 {
     [AutoProperty]
     public SerializedProperty printingSupply;

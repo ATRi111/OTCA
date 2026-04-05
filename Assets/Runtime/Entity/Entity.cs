@@ -13,6 +13,8 @@ public class Entity : MonoBehaviour
     public string entityName;
     public string RichTextName => entityName;
 
+    public virtual bool IsObstacle => false;
+
     protected virtual void Awake()
     {
         EventSystem = ServiceLocator.Get<IEventSystem>();

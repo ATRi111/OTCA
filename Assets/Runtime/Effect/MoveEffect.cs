@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveEffect : TeleportEffect
+public class MoveEffect : PositionChangeEffect
 {
     public readonly List<Vector3> route;
     // 移动速度倍率（规定行走为1）
