@@ -1,5 +1,8 @@
 ﻿using AStar;
 
+/// <summary>
+/// 要寻路时，根据Pawn的属性、移动方式抽象出相应的AMover(或AMover子类)实例
+/// </summary>
 public abstract class AMover : MoverBase
 {
     protected Pawn pawn;

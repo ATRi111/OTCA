@@ -3,7 +3,7 @@
 [System.Serializable]
 public abstract class EntityAnimation
 {
-    private AnimationManager animationManager;
+    private readonly AnimationManager animationManager;
     public Entity performer;
 
     public EntityAnimation(Entity performer)

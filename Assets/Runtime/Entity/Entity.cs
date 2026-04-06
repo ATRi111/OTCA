@@ -11,6 +11,9 @@ public class Entity : MonoBehaviour
     public GridMoveController GridMoveController { get; private set; }
 
     public string entityName;
+    /// <summary>
+    /// 用于UI中的文本
+    /// </summary>
     public string RichTextName => entityName;
 
     public virtual bool IsObstacle => false;

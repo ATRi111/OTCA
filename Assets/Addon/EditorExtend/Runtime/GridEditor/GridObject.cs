@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace EditorExtend.GridEditor
 {
+    /// <summary>
+    /// 所有受GridManager管理的物体应持有的组件
+    /// </summary>
     [SelectionBase]
     public class GridObject : MonoBehaviour
     {

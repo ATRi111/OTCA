@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
 
+/// <summary>
+/// 玩家（移动，使用卡牌）或敌方（移动，攻击）的一次行动，会造成若干个Effect
+/// </summary>
 [System.Serializable]
 public abstract class PawnAction
 {
-    private List<Effect> effects = new();
+    private readonly List<Effect> effects = new();
     //必须确保前面的Action执行完，再确定此Action的结果
     protected abstract void GenerateEffect(List<Effect> effects);
 
